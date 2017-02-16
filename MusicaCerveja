@@ -1,8 +1,10 @@
+import java.util.Scanner;
 
 public class MusicaCerveja {
 
 	public static void main(String[] args) {
-		int garrafas = 99;
+		Scanner leitor =new Scanner(System.in);
+		int garrafas =leitor.nextInt();
 		
 		while (garrafas > 0){
 			System.out.println(garrafas + " cervejas no freezer.");
@@ -10,5 +12,7 @@ public class MusicaCerveja {
 			garrafas = garrafas - 1;
 			System.out.println(garrafas +" cervejas agora no freezer.");
 		}
+		leitor.close();
 	}
+	
 }
