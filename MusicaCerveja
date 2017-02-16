@@ -1,0 +1,14 @@
+
+public class MusicaCerveja {
+
+	public static void main(String[] args) {
+		int garrafas = 99;
+		
+		while (garrafas > 0){
+			System.out.println(garrafas + " cervejas no freezer.");
+			System.out.println("Pego uma garrafa, passo pra frente.");
+			garrafas = garrafas - 1;
+			System.out.println(garrafas +" cervejas agora no freezer.");
+		}
+	}
+}
