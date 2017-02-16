@@ -10,7 +10,15 @@ public class MusicaCerveja {
 			System.out.println(garrafas + " cervejas no freezer.");
 			System.out.println("Pego uma garrafa, passo pra frente.");
 			garrafas = garrafas - 1;
-			System.out.println("Agora são " + garrafas +" cervejas no freezer.");
+			System.out.println(garrafas +" cervejas agora no freezer.");
+			
+			if (garrafas == 0){
+				System.out.println("Acabou a cerveja");
+				System.out.println("Quantas a mais?");
+				garrafas = leitor.nextInt();
+				System.out.println(garrafas + " cervejas adicionadas!");
+				
+			}
 		}
 		leitor.close();
 	}
