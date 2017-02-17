@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+/**
+ * Classe que checa que o aluno passou ou nao
+ * @author aluno
+ *
+ */
+public class Notas {
+
+	public static void main(String[] args) {
+		System.out.println("Qual sua primeira nota?");
+		Scanner leitor = new Scanner(System.in);
+		float nota1 = leitor.nextFloat();
+		System.out.println("E sua segunda nota?");
+		float nota2 = leitor.nextFloat();
+		System.out.println("E a terceira?");
+		float nota3 = leitor.nextFloat();
+		float media = (nota1+nota2+nota3)/3;
+		System.out.println("Sua media eh "+ media);
+		if (media >= 7.0){
+			System.out.println("Aprovado");
+			else{
+				if (media >= 5)
+					System.out.println("Final");
+				else{
+					System.out.println("Reprovado");
+				}}
+			}
+		}
+		
+	}
+}
