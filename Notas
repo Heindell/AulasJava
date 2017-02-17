@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 
 /**
@@ -18,7 +19,7 @@ public class Notas {
 		float media = (nota1+nota2+nota3)/3;
 		System.out.println("Sua media eh "+ media);
 		if (media >= 7.0){
-			System.out.println("Aprovado");
+			System.out.println("Aprovado");}
 			else{
 				if (media >= 5)
 					System.out.println("Final");
@@ -26,7 +27,6 @@ public class Notas {
 					System.out.println("Reprovado");
 				}}
 			}
-		}
+		leitor.close();
 		
 	}
-}
