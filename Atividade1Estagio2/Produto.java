@@ -40,17 +40,8 @@ public class Produto extends Vendedor{
 		Produto.promocao = promocao;
 	}
 
-	public static void main(String[] args) {
-		leitor = new Scanner(System.in);
-		System.out.println("Insira o Codigo");
-		codigo = leitor.nextInt();
-		System.out.println("Insira o Valor da venda");
-		valorVenda = leitor.nextFloat();
-		System.out.println("Insira o valor do custo");
-		valorCusto = leitor.nextFloat();
-		System.out.println("Insira o valor de promocao");
-		promocao = leitor.nextFloat();
+	
 		
 		
 	}
-}
+
