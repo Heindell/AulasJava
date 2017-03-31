@@ -2,12 +2,12 @@ import java.util.Scanner;
 
 public class Vendedor {
 
-	public static String nome;
+	protected static String nome;
 	public static int codigo;
 	public float comissao;
 	public static String endereco;
-	private static Scanner leitor;
 	
+	Scanner leitor = new Scanner(System.in);
 	
 	public String getNome() {
 		return nome;
@@ -41,16 +41,8 @@ public class Vendedor {
 		Vendedor.endereco = endereco;
 	}
 	
-	public static void main(String[] args) {
-		leitor = new Scanner(System.in);
-		System.out.println("Insira o nome:");
-		nome = leitor.nextLine();
-		System.out.println("Insira o Endereco:");
-		endereco = leitor.nextLine();
-		System.out.println("Insira o Codigo: ");
-		codigo = leitor.nextInt();
 		
 		
 		
 	}
-}
+
