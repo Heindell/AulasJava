@@ -43,7 +43,7 @@ public class Seguradora {
 		while (opcao != 0){
 			imprimeMenu();
 			opcao = ler.nextInt();
-		
+			try{
 			if (opcao == 1){
 				int option;
 				tipoCliente();// Determina se é pessoa fisica ou juridica
@@ -80,6 +80,10 @@ public class Seguradora {
 			}
 			else {
 				break;
+			}
+			}catch(NullPointerException e){
+				e.printStackTrace();
+				System.out.println("Opção nula!");
 			}
 			System.out.println("Cadestre seu nome");
 			nome = ler.nextLine();
